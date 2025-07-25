@@ -1,0 +1,132 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(8, 8, 8, 0.466);
+
+    >form {
+        width: 600px;
+        height: 500px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10PX;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+
+        >span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        >input {
+            &:first-of-type {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 320px;
+                height: 40px;
+                background-color: rgb(212, 212, 212);
+                border-radius: 50px;
+                outline: none;
+                margin-top: 30px;
+                color: black;
+                border: none;
+                padding: 5px;
+                padding-left: 20px;
+
+            }
+
+
+            &:last-of-type {
+                width: 320px;
+                height: 40px;
+                background-color: rgb(212, 212, 212);
+                padding: 3px;
+                border-radius: 50px;
+                outline: none;
+                border: none;
+                padding: 5px;
+                padding-left: 20px;
+            }
+
+        }
+
+        ::placeholder {
+            color: rgb(0, 0, 0);
+
+        }
+
+        >button {
+            width: 340px;
+            height: 50px;
+            border: none;
+            border-radius: 50px;
+            background-color: rgb(212, 212, 212);
+            border: 1px solid white;
+            color: black;
+            font-size: 18px;
+            font-weight: 800;
+
+
+            >a {
+                color: black;
+                font-size: 17px;
+                font-weight: 800;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:last-of-type {
+                background-color: rgb(129, 35, 121);
+                font-size: 23px;
+                font-weight: 100;
+                width: 150px;
+                height: 40px;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(80, 77, 79);
+
+                }
+
+                f>a {
+                    text-decoration: none;
+                    color: white;
+
+
+                }
+            }
+        }
+
+        >label {
+            color: white;
+        }
+
+        >div {
+
+            width: 300px;
+            height: 6px;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: gray;
+
+            >div {
+                height: 100%;
+                width: 0;
+                background-color: rgb(59, 15, 85);
+                border-radius: 5px;
+                transition: .4s;
+            }
+        }
+
+    }
+}

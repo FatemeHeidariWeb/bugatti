@@ -1,0 +1,79 @@
+(function (d, w) {
+  var script, config, container, style;
+  var embedUuid = '1933f9a9a7807c4b96ab3fa0e14277bf';
+  var urlAlias = 'bugatti-dot-com-grid';
+
+  function mergeDeep(target, source) {
+    if (typeof target == "object" && typeof source == "object") {
+      for (var key in source) {
+        if (source[key] === null && (target[key] === undefined || target[key] === null)) {
+          target[key] = null;
+        } else if (source[key] instanceof Array) {
+          target[key] = source[key];
+        } else if (typeof source[key] == "object" && source[key] !== null) {
+          if (!target[key]) target[key] = {};
+          mergeDeep(target[key], source[key]);
+        } else {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  }
+
+  function merge(target, source) {
+    return mergeDeep(mergeDeep({}, target), source);
+  }
+
+  w.flcklr = w.flcklr || {};
+
+  w._flocklerEditVersion = null;
+
+  w._flocklerOverride = w._flocklerOverride || {};
+  w.flcklr.EmbedConfigs = w.flcklr.EmbedConfigs || {};
+  w.flcklr.EmbedConfigs[embedUuid] = merge({"embedUuid":"1933f9a9a7807c4b96ab3fa0e14277bf","embedVersion":"v3","container":"flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf","urlAlias":"flockler-embed-bugatti-dot-com-grid","section":[87027],"site":9374,"style":"grid","count":6,"defaultCss":true,"defaultJs":true,"extra":{"wall_timestamps":false,"wall_timestamps_format":"relative","hide_caption":true,"popup":false},"refresh":60000,"refreshType":"auto","showLikes":1,"showComments":1,"showRetweets":1,"showProfile":false}, w._flocklerOverride[embedUuid]);
+
+    w.flcklr.EmbedConfigsV3 = w.flcklr.EmbedConfigsV3 || {};
+    w.flcklr.EmbedConfigsV3[embedUuid] = {"embedUuid":"1933f9a9a7807c4b96ab3fa0e14277bf","embedVersion":"v3","siteUuid":"16e406830e406edcb5b0fa71750c0198","urlAlias":"flockler-embed-bugatti-dot-com-grid","configuration":{"count":6,"locale":"en","filters":{"filterBySectionIds":[87027],"filterByTags":[],"filterByChannels":[],"tagFilterType":"any","filterByProductIds":[],"filterByProductCategoryIds":[],"filterByProductFeedIds":[],"filterByFallbacks":null},"localizations":{"relativeTime":{"seconds":{"singular":"# sec. ago","plural":"# sec. ago"},"minutes":{"singular":"# min. ago","plural":"# min. ago"},"hours":{"singular":"# hr. ago","plural":"# hr. ago"},"days":{"singular":"# day ago","plural":"# days ago"},"weeks":{"singular":"# wk. ago","plural":"# wk. ago"},"months":{"singular":"# mo. ago","plural":"# mo. ago"},"years":{"singular":"# yr. ago","plural":"# yr. ago"}},"actions":{"buyNow":"Buy now","next":"Next","previous":"Previous","tapToPlay":"Tap to play","viewProducts":"View products","showMore":"Show more…","loadMorePosts":"Load more posts","showNewerPosts":"Show newer posts"},"help":{"noAltText":"No photo description available.","playVideo":"Play video","anonymous":"Anonymous","recommends":"Recommends %{page_name}","doesNotRecommend":"Doesn't recommend %{page_name}","seeOriginalPost":"See original post","seePostOn":"See original post on %{channel}","seeProfileOf":"See profile page of %{user}","profilePictureOf":"Profile picture of %{user}","openInPopupView":"Open in popup view","opensInANewWindow":"Opens in a new window","readMoreNotice":"(enlarge visible text above)"},"postLabels":{"facebook":"A Facebook post","flickr":"A Flickr post","flockler":"A post","fromUser":"from %{user}","google_review":"A Google review","instagram":"An Instagram post","linkedin":"A LinkedIn post","pinterest":"A Pinterest post","reddit":"A Reddit post","review":"Review","rss":"A post from RSS feed","soundcloud":"A post from Soundcloud","tiktok":"A TikTok post","twitter":"A Twitter post","video":"A video post","vimeo":"A Vimeo video","youtube":"A YouTube video"},"stats":{"commentsLabelSingular":"%{count} comment","commentsLabelPlural":"%{count} comments","likesLabelSingular":"%{count} like","likesLabelPlural":"%{count} likes","retweetsLabelSingular":"%{count} retweet","retweetsLabelPlural":"%{count} retweets","facebookLikeReactionsSingular":"person reacted with Like","facebookLikeReactionsPlural":"people reacted with Like","facebookLoveReactionsSingular":"person reacted with Love","facebookLoveReactionsPlural":"people reacted with Love","facebookHahaReactionsSingular":"person reacted with Haha","facebookHahaReactionsPlural":"people reacted with Haha","facebookWowReactionsSingular":"person reacted with Wow","facebookWowReactionsPlural":"people reacted with Wow","facebookSadReactionsSingular":"person reacted with Sad","facebookSadReactionsPlural":"people reacted with Sad","facebookAngryReactionsSingular":"person reacted with Angry","facebookAngryReactionsPlural":"people reacted with Angry"}},"theme":{"name":"grid","elements":{"profileDetails":false,"captions":false,"publishedAt":false,"publishedAtFormat":"relative","stats":{"likeCount":true,"commentCount":true,"retweetCount":true},"products":true},"features":{"popup":false,"infiniteScroll":false,"randomize":false,"autoRefresh":{"type":"auto","intervalInSeconds":60},"animation":{"type":"none","intervalInSeconds":0},"emojiFallback":false,"embedScreen":false},"text":{"loadMoreText":"Load more posts","showMoreText":"Show more…"},"customization":{"css":"#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=2100\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=1800\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=1500\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=1200\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=900\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=600\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=0\"] .flockler-grid-item{max-width:380px;width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-embed-popup__close{top:80px !important;right:5em !important}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__wrapper{border:none !important;background:none !important;border-radius:6px !important}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__meta{padding:0 0em !important;background-color:rgba(0,0,0,0);background-color:rgba(0,0,0,0)}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__wrapper{position:relative;border-radius:6px !important}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__footer{position:absolute;bottom:0;left:0;right:0;z-index:2;background:rgba(0,0,0,0);color:#fff;padding:10px}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__media{position:relative;z-index:1}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items a.flockler-btn-load-more{box-shadow:none !important;border:1px solid #fff !important;color:#fff !important;background-color:rgba(0,0,0,0) !important;font-size:.8125rem !important;line-height:1.125rem !important;font-family:Bugatti Monospace,\"Arial\" !important;font-weight:600 !important;border-radius:100px !important;gap:12px !important;padding:12px 24px !important;transition:border .6s ease-in-out;width:auto !important;display:inline-flex !important;transition:300ms !important}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items a.flockler-btn-load-more:focus,#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items a.flockler-btn-load-more:hover{background-color:#fff !important;color:#000 !important}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__content figure.flockler-grid-item__context,#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__content:hover figure.flockler-grid-item__context,#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__content:focus figure.flockler-grid-item__context,#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__content:focus-within figure.flockler-grid-item__context{visibility:hidden}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__media__post-type-icon{visibility:hidden}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__footer__details__stat{opacity:1;font-size:1.25em}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__footer__details__stat--heart{opacity:1}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf svg.flockler-grid-item__footer__details__stat__icon{opacity:1}","ctaLink":{"defaultText":null,"backgroundColor":null,"textColor":null,"icon":null,"utmSource":null,"utmMedium":null,"utmCampaign":null}}}}};
+
+
+    style = d.createElement('style');
+    style.setAttribute('data-flockler-embed-id', embedUuid);
+    style.textContent = '';
+    style.textContent += "#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=2100\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=1800\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=1500\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=1200\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=900\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=600\"] .flockler-grid-item{width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items[data-container-width=\"\u003e=0\"] .flockler-grid-item{max-width:380px;width:33.3333333333%}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-embed-popup__close{top:80px !important;right:5em !important}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__wrapper{border:none !important;background:none !important;border-radius:6px !important}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__meta{padding:0 0em !important;background-color:rgba(0,0,0,0);background-color:rgba(0,0,0,0)}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__wrapper{position:relative;border-radius:6px !important}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__footer{position:absolute;bottom:0;left:0;right:0;z-index:2;background:rgba(0,0,0,0);color:#fff;padding:10px}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__media{position:relative;z-index:1}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items a.flockler-btn-load-more{box-shadow:none !important;border:1px solid #fff !important;color:#fff !important;background-color:rgba(0,0,0,0) !important;font-size:.8125rem !important;line-height:1.125rem !important;font-family:Bugatti Monospace,\"Arial\" !important;font-weight:600 !important;border-radius:100px !important;gap:12px !important;padding:12px 24px !important;transition:border .6s ease-in-out;width:auto !important;display:inline-flex !important;transition:300ms !important}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items a.flockler-btn-load-more:focus,#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-items a.flockler-btn-load-more:hover{background-color:#fff !important;color:#000 !important}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__content figure.flockler-grid-item__context,#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__content:hover figure.flockler-grid-item__context,#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__content:focus figure.flockler-grid-item__context,#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__content:focus-within figure.flockler-grid-item__context{visibility:hidden}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__media__post-type-icon{visibility:hidden}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__footer__details__stat{opacity:1;font-size:1.25em}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf .flockler-grid-item__footer__details__stat--heart{opacity:1}#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf svg.flockler-grid-item__footer__details__stat__icon{opacity:1}";
+    style.textContent += '#flockler-embed-1933f9a9a7807c4b96ab3fa0e14277bf { --fl-item-background:#ffffff;--fl-text-color:#000000 }';
+
+    document.head.insertAdjacentElement('beforeend', style);
+
+    container = d.getElementById('flockler-embed-' + embedUuid);
+    if(!container) {
+      container = document.querySelector("[data-flockler-embed='"+urlAlias+"']");
+      container.id = 'flockler-embed-' + embedUuid;
+    }
+    if (!container) return;
+
+      if (w.flcklr && w.flcklr.Embeds && w.flcklr.Embeds.versions && w.flcklr.Embeds.versions.v3 && w.flcklr.Embeds.versions.v3['__grid']) {
+        w.flcklr.Embeds.create(w.flcklr.EmbedConfigs[embedUuid]);
+        return;
+      }
+
+      w.flcklr.EmbedsToAutoload = w.flcklr.EmbedsToAutoload || [];
+      w.flcklr.EmbedsToAutoload.push({ embedUuid: embedUuid });
+
+    if (!(w.flcklr.embedJsV3HasBeenAddedToDOM || {})['grid']) {
+      script = d.createElement('script');
+        script.async = true;
+
+        script.src = "https://plugins.flockler.com/embed/v3/embed-grid.js";
+
+
+      (d.head || d.body).insertAdjacentElement('beforeend', script);
+      w.flcklr.embedJsV3HasBeenAddedToDOM = w.flcklr.embedJsV3HasBeenAddedToDOM || {};
+      w.flcklr.embedJsV3HasBeenAddedToDOM['grid'] = true;
+
+      if ( console && console.log ) {
+        console.log('🟦 Social Plugin powered by Flockler — Learn more at flockler.com');
+      }
+    }
+
+})(document, window);

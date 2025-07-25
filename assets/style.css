@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "zero";
+    src: url(../assets/font/BUGATTIDisplay-Regular.woff2);
+}
+
+@font-face {
+    font-family: "one";
+    src: url(../assets/font/BUGATTIMonospace-Regular.woff2);
+}
+
+@font-face {
+    font-family: "two";
+    src: url(../assets/font/BUGATTIText-Regular.woff2);
+}
+
+
+
+
+main {
+    overflow: hidden;
+    background-color: black;
+    cursor: pointer;
+
+    >header {
+        font-family: "one";
+        font-weight: bolder;
+
+        >.offcanvas-body {
+
+            >p {
+
+                transition: .5s;
+
+                &:hover {
+                    color: purple;
+                }
+            }
+        }
+    }
+
+    >.part1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        position: relative;
+        font-family: "zero";
+
+        >div {
+
+            >div {
+
+
+                >video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                >span {
+
+
+                    >h2 {
+                        position: absolute;
+                        color: rgb(255, 255, 255);
+                        margin-bottom: 180px;
+                        font-size: 60px;
+                    }
+
+                    >button {
+                        position: absolute;
+                        color: white;
+                        border: 1px solid white;
+                        background-color: rgba(250, 235, 215, 0);
+                        padding: 10px;
+                        border-radius: 50px;
+                        width: 320px;
+                        height: 45px;
+                        transition: .5s;
+                        font-family: "one";
+
+                        &:hover {
+                            color: black;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    >.part2 {
+        >div {
+            >div {
+                >h2 {
+                    font-family: "zero";
+                }
+
+                >p {
+                    font-family: "tow";
+
+                }
+            }
+        }
+    }
+
+    >.part3 {
+        font-family: "zero";
+    }
+
+    >.part4 {
+        ont-family: "zero";
+
+        >div {
+            margin-bottom: 50px;
+
+            >.col-md-4 {
+                text-align: start;
+                overflow: hidden;
+
+                >img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    margin-bottom: 15px;
+                    transition: transform 0.5s ease;
+                    border-radius: 7px;
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+                }
+
+
+                >h3 {
+                    color: #ffffff;
+
+                    margin-top: 30px;
+
+                }
+
+                >a {
+                    color: #ffffff;
+                    font-family: "one";
+                    transition: .5s;
+
+                    &:hover {
+                        color: purple;
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
+
+    >.part6 {
+        font-family: "zero";
+    }
+
+    >.part7 {
+        border: 1px solid rgba(133, 133, 133, 0.527);
+
+
+        border-radius: 5px;
+
+        >article {
+
+            >div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+
+                >span {
+
+                    >img {
+                        width: 500px;
+                    }
+
+                    >div {
+                        >h3 {
+                            font-size: 15px;
+                            font-family: "one";
+                            transition: .5s;
+
+                            &:hover {
+                                color: purple;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    >.part8 {
+        font-family: "zero";
+
+        >h2 {
+
+            font-size: 70px;
+        }
+    }
+
+    >.part9 {
+
+
+
+        font-family: "zero";
+        font-size: 20px;
+
+        >row {
+
+
+            >img {
+                object-fit: cover;
+                width: 500px;
+            }
+        }
+
+    }
+
+    >.part10 {
+        font-family: "zero";
+
+        >h2 {
+            font-size: 70px;
+        }
+    }
+
+
+
+    >.part11 {
+        >article {
+            overflow: hidden;
+
+            >div {
+                >span {
+                    >img {
+                        width: 500px;
+                        height: 400px;
+                        border-radius: 2%;
+                    }
+                }
+            }
+        }
+    }
+
+    >.part12 {
+        font-family: "one";
+
+        >button {
+            position: absolute;
+            color: white;
+            border: 1px solid white;
+            background-color: rgba(250, 235, 215, 0);
+            padding: 10px;
+            border-radius: 50px;
+            width: 200px;
+            height: 45px;
+            transition: .5s;
+
+            &:hover {
+                color: black;
+                background-color: white;
+            }
+        }
+    }
+
+    >.parte13 {
+        width: 100%;
+        margin-top: 80px;
+        background-color: hsl(0deg 0% 7.45%);
+
+        >div {
+            >div {
+                display: flex;
+                justify-content: center;
+
+                >div {
+
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    padding: 20px;
+
+                    >h2 {
+                        font-size: 20px;
+                        color: rgb(58, 58, 58);
+                        margin-bottom: 20px;
+                        font-family: "zero";
+                    }
+
+                    >p {
+                        color: white;
+                        font-size: 14px;
+                        cursor: pointer;
+                        font-family: "one";
+                        transition: .5s;
+
+                        &:hover {
+                            color: purple;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    >.part14 {
+        >p {
+            font-size: 25px;
+
+            >strong {
+                color: purple;
+                font-size: 20px;
+
+            }
+        }
+
+        >a {
+            font-size: 55px;
+            color: rgb(255, 255, 255);
+            transition: 1s;
+            border-radius: 7px;
+
+
+            &:hover {
+                transform: scale(1.2);
+                color: purple;
+            }
+        }
+    }
+
+    >.part15 {
+
+        >h2 {
+            font-size: 400px;
+            color: rgb(54, 54, 54);
+        }
+    }
+
+}
+
+
+
+
+
+.text {
+    position: absolute;
+    top: 63%;
+    left: 15%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.responsive {
+
+    color: white;
+
+}
+
+.p2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.fil {
+    filter: brightness(50%);
+    width: 1600px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pa {
+    width: 100px;
+    height: 20px;
+}
+
+.bac {
+    color: white;
+}
+
+.hov {
+    transition: 1s;
+    border-radius: 7px;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.mon{
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+
+
+}
+
+.size {
+    font-size: 50px;
+}
+
+.head {
+    transition: .5s;
+
+    &:hover {
+        color: purple;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    main {
+        >.part15 {
+            >h2 {
+                display: none;
+            }
+        }
+    }
+}
